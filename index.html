@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;700 & display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/style.css" type="text/css" />
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main>
+        <h2>Password Generator</h2>
+
+        <form>
+            <div class="result-box">
+                <input type="text" placeholder="Result" class="result" readonly="readonly" />
+                <img src="./img/copy_icon.png" alt="Copy Icon" />
+            </div>
+
+            <div class="label">
+                <label for="lengthCheck">Password Length</label>
+                <input type="number" class="lengthCheck" min="0">
+            </div>
+
+            <div class="label">
+                <label for="upperCheck">Include Uppercase Letters</label>
+                <input type="checkbox" class="upperCheck">
+            </div>
+
+            <div class="label">
+                <label for="upperCheck">Include Lowercase Letters</label>
+                <input type="checkbox" class="lowerCheck">
+            </div>
+
+            <div class="label">
+                <label for="upperCheck">Include Numbers</label>
+                <input type="checkbox" class="numbersCheck">
+            </div>
+
+            <div class="label">
+                <label for="upperCheck">Include Symbols</label>
+                <input type="checkbox" class="symbolsCheck">
+            </div>
+
+            <input type="submit" class="generate-pass" value="Generate" />
+        </form>
+    </main>
+</body>
+
+</html>
