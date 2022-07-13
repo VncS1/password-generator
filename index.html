@@ -8,11 +8,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;700 & display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/style.css" type="text/css" />
 
     <title>Password Generator</title>
+
+
+    <script src="./scripts.js" defer type="module"></script>
 </head>
 
 <body>
@@ -21,13 +24,13 @@
 
         <form>
             <div class="result-box">
-                <input type="text" placeholder="Result" class="result" readonly="readonly" />
-                <img src="./img/copy_icon.png" alt="Copy Icon" />
+                <input type="text" placeholder="Result" class="result" readonly="readonly" value="" />
+                <img src="./img/copy_icon.png" alt="Copy Icon" class="copy"/>
             </div>
 
             <div class="label">
                 <label for="lengthCheck">Password Length</label>
-                <input type="number" class="lengthCheck" min="0">
+                <input type="number" class="lengthCheck" min="1">
             </div>
 
             <div class="label">
